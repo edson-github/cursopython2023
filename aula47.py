@@ -14,6 +14,7 @@ na palavra secreta.
 Faça a contagem de tentativas do seu
 usuário.
 """
+
 import os
 
 palavra_secreta = 'perfume'
@@ -31,12 +32,10 @@ while True:
     if letra_digitada in palavra_secreta:
         letras_acertadas += letra_digitada
 
-    palavra_formada = ''
-    for letra_secreta in palavra_secreta:
-        if letra_secreta in letras_acertadas:
-            palavra_formada += letra_secreta
-        else:
-            palavra_formada += '*'
+    palavra_formada = ''.join(
+        letra_secreta if letra_secreta in letras_acertadas else '*'
+        for letra_secreta in palavra_secreta
+    )
 
     print('Palavra formada:', palavra_formada)
 

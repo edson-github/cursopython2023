@@ -5,6 +5,7 @@ inserir, apagar e listar valores da sua lista
 Não permita que o programa quebre com 
 erros de índices inexistentes na lista.
 """
+
 import os
 
 lista = []
@@ -34,7 +35,7 @@ while True:
     elif opcao == 'l':
         os.system('clear')
 
-        if len(lista) == 0:
+        if not lista:
             print('Nada para listar')
 
         for i, valor in enumerate(lista):

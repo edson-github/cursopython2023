@@ -8,8 +8,7 @@
 # object é a super classe de uma classe
 class A:
     def __new__(cls, *args, **kwargs):
-        instancia = super().__new__(cls)
-        return instancia
+        return super().__new__(cls)
 
     def __init__(self, x):
         self.x = x

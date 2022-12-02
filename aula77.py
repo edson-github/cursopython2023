@@ -38,10 +38,13 @@ for pergunta in perguntas:
     if escolha.isdigit():
         escolha_int = int(escolha)
 
-    if escolha_int is not None:
-        if escolha_int >= 0 and escolha_int < qtd_opcoes:
-            if opcoes[escolha_int] == pergunta['Resposta']:
-                acertou = True
+    if (
+        escolha_int is not None
+        and escolha_int >= 0
+        and escolha_int < qtd_opcoes
+        and opcoes[escolha_int] == pergunta['Resposta']
+    ):
+        acertou = True
 
     print()
     if acertou:

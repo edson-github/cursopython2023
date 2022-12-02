@@ -14,10 +14,10 @@ intervalo = range(0)
 
 
 def falsy(valor):
-    return 'falsy'if not valor else 'truthy'
+    return 'truthy' if valor else 'falsy'
 
 
-print(f'TESTE', falsy('TESTE'))
+print('TESTE', falsy('TESTE'))
 print(f'{lista=}', falsy(lista))
 print(f'{dicionario=}', falsy(dicionario))
 print(f'{conjunto=}', falsy(conjunto))
