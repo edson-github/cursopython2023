@@ -13,7 +13,7 @@ class Carrinho:
         self._produtos = []
 
     def total(self):
-        return sum([p.preco for p in self._produtos])
+        return sum(p.preco for p in self._produtos)
 
     def inserir_produtos(self, *produtos):
         # self._produtos.extend(produtos)

@@ -34,9 +34,7 @@ def multiplica(
 
     Multiplica x e y. Se z for enviado, multiplica x, y, z.
     """
-    if z is None:
-        return x * y
-    return x * y * z
+    return x * y if z is None else x * y * z
 
 
 variavel_2 = 2

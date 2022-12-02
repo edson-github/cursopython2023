@@ -11,10 +11,7 @@ args - Argumentos não nomeados
 #     return x + y
 
 def soma(*args):
-    total = 0
-    for numero in args:
-        total += numero
-    return total
+    return sum(args)
 
 
 soma_1_2_3 = soma(1, 2, 3)

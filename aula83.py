@@ -21,7 +21,7 @@ dados_pessoa = {
     'altura': 1.6,
 }
 
-pessoas_completa = {**pessoa, **dados_pessoa}
+pessoas_completa = pessoa | dados_pessoa
 # print(pessoas_completa)
 
 # args e kwargs

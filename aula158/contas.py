@@ -64,7 +64,7 @@ class ContaCorrente(Conta):
     def __repr__(self):
         class_name = type(self).__name__
         attrs = f'({self.agencia!r}, {self.conta!r}, {self.saldo!r}, '\
-            f'{self.limite!r})'
+                f'{self.limite!r})'
         return f'{class_name}{attrs}'
 
 

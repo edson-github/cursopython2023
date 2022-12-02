@@ -9,9 +9,7 @@ def p(v):
     pprint.pprint(v, sort_dicts=False, width=40)
 
 
-lista = []
-for numero in range(10):
-    lista.append(numero)
+lista = list(range(10))
 # print(lista)
 
 lista = [

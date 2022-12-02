@@ -34,7 +34,7 @@ class Meta(type):
         cls.__repr__ = meu_repr
 
         if 'falar' not in cls.__dict__ or \
-                not callable(cls.__dict__['falar']):
+                    not callable(cls.__dict__['falar']):
             raise NotImplementedError('Implemente falar')
 
         return cls
@@ -53,8 +53,7 @@ class Pessoa(metaclass=Meta):
 
     def __new__(cls, *args, **kwargs):
         print('MEU NEW')
-        instancia = super().__new__(cls)
-        return instancia
+        return super().__new__(cls)
 
     def __init__(self, nome):
         print('MEU INIT')

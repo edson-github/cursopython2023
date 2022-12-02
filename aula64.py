@@ -1,10 +1,7 @@
 import random
 
 for _ in range(100):
-    nove_digitos = ''
-    for i in range(9):
-        nove_digitos += str(random.randint(0, 9))
-
+    nove_digitos = ''.join(str(random.randint(0, 9)) for _ in range(9))
     contador_regressivo_1 = 10
 
     resultado_digito_1 = 0
